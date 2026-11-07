@@ -1,0 +1,171 @@
+{
+  "level": 37,
+  "title": "حل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة - Efrah - افرح",
+  "source_url": "https://www.efrah7.com/2025/12/answer-qureo37.html",
+  "language": "ar",
+  "structure": "ordered_by_source_lesson_then_question",
+  "lessons": [
+    {
+      "order": 1,
+      "lesson": "محتوى قبل أول درس",
+      "type": "intro",
+      "intro": "LEVEL: 37\nURL: https://www.efrah7.com/2025/12/answer-qureo37.html\nTITLE: حل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة - Efrah - افرح\n\nاتصل بنا\nسياسة الخصوصية\nمن نحن\nسياسة الاستخدام\nالرئيسيةاخبارناالازهر والتعليمحل منصة كوريو للمرحلة الثانويةحل منصة الثقافة المالية للمرحلة الثانويةاسلامياتتقنية ومعلوماتتجربةخدماتك\n\nالتسميات\nاخبارنا\n285\nاسلاميات\n24\nالازهر والتعليم\n262\nتجربة\n25\nتقنية ومعلومات\n18\nحل منصة الثقافة المالية للمرحلة الثانوية\n29\nحل منصة كوريو للمرحلة الثانوية\n86\nخدماتك\n36\n \n \n \n Home  الازهر والتعليم  حل منصة كوريو للمرحلة الثانوية  حل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\n الرئيسية  الازهر والتعليم  حل منصة كوريو للمرحلة الثانوية  حل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nالازهر والتعليمحل منصة كوريو للمرحلة الثانوية\nحل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\n Efrah  منذ 10 أشهر تقريبا 1\nA+ A-\n\n \n\n\n\n\n\n\n\n\n\n\nحل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\n\n\n\n\n\n\n\nحل المستوى 37 السابع والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\n\n\n\n\n\n\n\n\n\n\nحل المستوي 37 السابع والثلاثين منصة كوريو اليابانية لطلاب الصف الاول الثانوي مادة البرمجة والذكاء الاصطناعي \n\nالاكواد ممكن تاخدها نسخ لسهوله الحل ولضمان عدم كتابه اخطاء \n\nموجود حل جميع المستويات نسخ ولصق لمنصة كوريو لطلاب الصف الاول الثانوي\n\nمن المستوي الاول الي المستوي الاخير\n\nالحل يضمن لك حصولك علي الدرجة النهائية \n\n\n\n\n لو محتاج مساعدة في حل مستويات المنصة ابعت وهنساعدك من خلال الفيس بوك بالضغط هنا وارسال رسالة \n\n\n\n\n\nحل المستوي 37 السابع والثلاثين منصة كوريو اليابانية لطلاب الصف الاول الثانوي مادة البرمجة والذكاء الاصطناعي\n \n\nحل المستوي 37 السابع والثلاثين بالكامل لمنصة كوريو لطلاب الصف الاول الثانوي\n\n\n\n\n\nالمستوي 37 \nجمل switch",
+      "questions": []
+    },
+    {
+      "order": 2,
+      "lesson": "الدرس الاول",
+      "type": "section",
+      "intro": "",
+      "questions": [
+        {
+          "number": 1,
+          "label": "السؤال الاول",
+          "question": "اضغط على \"تشغيل الكود\" دون تعديل البرنامج.\nنضغط علي تشغيل الكود فقط",
+          "answer": "اضغط على «تشغيل الكود» دون تعديل البرنامج.",
+          "answer_status": "recovered_from_source_text",
+          "answer_type": "run_action",
+          "answer_source": "https://www.efrah7.com/2025/12/answer-qureo37.html"
+        },
+        {
+          "number": 2,
+          "label": "السؤال الثاني",
+          "question": "سوف نقوم بإنشاء برنامج للتنبؤ بالحظ حسب فصيلة الدم.\nلنضف برنامجًا يعرض \"حظك اليوم جيد\" إذا كانت فصيلة الدم A.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة A له.\n\nلننشئ البرنامج من السطر الثالث كما يلي:\n① إذا كانت قيمة المتغير bloodType هي A، فاعرض \"حظك اليوم جيد\" في وحدة التحكم.",
+          "answer": "نكتب الكود التالي من السطر الثالث وترك السطر الثاني فارغ\n\nif (bloodType == \"A\") {\nconsole.log(\"Today's fortune is decent\");\n}\n\n\nالكود كامل مع مراعاه السطر الثاني فارغ\n\nlet bloodType = \"A\";\n\nif (bloodType == \"A\") {\nconsole.log(\"Today's fortune is decent\");\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 3,
+          "label": "السؤال الثالث",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم.\nلنضف برنامجًا يعرض نتائج مختلفة إذا كانت فصيلة الدم B أو O أو AB بدلاً من A.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة \"B\" له.\n\nلننشئ البرنامج من السطر الخامس باستخدام \"else if\" كما يلي:\n① إذا كانت فصيلة الدم B، فاعرض \"حظك اليوم رائع!\"\n② إذا كانت فصيلة الدم O، فاعرض \"يبدو أن حظك اليوم جيد!\"\n③ إذا كانت فصيلة الدم AB، فاعرض \"قد لا يكون حظك اليوم جيدًا…\"",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاة السطر الثاني فارغ\n\nlet bloodType = \"B\";\n\nif (bloodType == \"A\") {\nconsole.log(\"Today's fortune is decent\");\n} else if (bloodType == \"B\") {\nconsole.log(\"Today's fortune is excellent!\");\n} else if (bloodType == \"O\") {\nconsole.log(\"Today's fortune looks good!\");\n} else if (bloodType == \"AB\") {\nconsole.log(\"Today's fortune might not be so good...\");\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 4,
+          "label": "السؤال الرابع",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم.\nلنضف برنامجًا يعرض \"دعنا نعرف فصيلة دمك!\" إذا لم يتحقق أي شرط.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة \"Unknown\" له.\n\nلننشئ البرنامج من السطر 11 كما يلي:\n① إذا لم يتحقق أي شرط، فاعرض \"دعنا نعرف فصيلة دمك!\" في وحدة التحكم.",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاة السطر الثاني فارغ\n\nlet bloodType = \"Unknown\";\n\nif (bloodType == \"A\") {\nconsole.log(\"Today's fortune is decent\");\n} else if (bloodType == \"B\") {\nconsole.log(\"Today's fortune is excellent!\");\n} else if (bloodType == \"O\") {\nconsole.log(\"Today's fortune looks good!\");\n} else if (bloodType == \"AB\") {\nconsole.log(\"Today's fortune might not be so good...\");\n} else {\nconsole.log(\"Let's find out your blood type!\");\n}\n\n\n\n\n\n\n\n\n\n.........................................................................................................................................",
+          "answer_status": "explicit_answer_marker"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "lesson": "الدرس الثاني",
+      "type": "section",
+      "intro": "",
+      "questions": [
+        {
+          "number": 1,
+          "label": "السؤال الاول",
+          "question": "اضغط على \"تشغيل الكود\" دون تعديل البرنامج.\nنضغط علي تشغيل الكود فقط",
+          "answer": "اضغط على «تشغيل الكود» دون تعديل البرنامج.",
+          "answer_status": "recovered_from_source_text",
+          "answer_type": "run_action",
+          "answer_source": "https://www.efrah7.com/2025/12/answer-qureo37.html"
+        },
+        {
+          "number": 2,
+          "label": "السؤال الثاني",
+          "question": "تم تعيين القيمة C للمتغير bloodType.\nاضغط \"تشغيل الكود\" دون تعديل البرنامج.",
+          "answer": "نضغط علي تشغيل الكود فقط",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 3,
+          "label": "السؤال الثالث",
+          "question": "سنقوم بإنشاء برنامج للتنبؤ بالحظ حسب فصيلة الدم باستخدام عبارة switch.\nلنُكمل البرنامج ليعرض نتائج مختلفة حسب فصيلة الدم.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة B له.\n\nلنكتب البرنامج كما يلي:\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"حظك اليوم جيد\");\nbreak;\n...\n}",
+          "answer": "نكتب في النواقص المخصصة لكتابة الكود\n\n\nswitch\n\ncase\n\nbreak\n\n\nشكل الكود النهائي بالكامل\n\nlet bloodType = \"B\";\n\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\ncase \"B\":\nconsole.log(\"Today's fortune is excellent!\");\nbreak;\ncase \"O\":\nconsole.log(\"Today's fortune looks good!\");\nbreak;\ncase \"AB\":\nconsole.log(\"Today's fortune might not be so good...\");\nbreak;\ndefault:\nconsole.log(\"Let's find out your blood type!\");\nbreak;\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 4,
+          "label": "السؤال الرابع",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم باستخدام switch.\nلنُكمل البرنامج ليعرض نتائج مختلفة حسب فصيلة الدم.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة C له.\n\nلنُدخل الكود التالي من السطر 16 فصاعدًا:\n\ndefault:\nconsole.log(\"Let's find out your blood type!\");\nbreak;",
+          "answer": "نكتب في الاماكن المخصصة لكتابة الكود في السطرين 16 - 18 الاتى\n\n\ndefault\n\n\nbreak\n\n\nشكل الكود النهائي بالكامل\n\nlet bloodType = \"C\";\n\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\ncase \"B\":\nconsole.log(\"Today's fortune is excellent!\");\nbreak;\ncase \"O\":\nconsole.log(\"Today's fortune looks good!\");\nbreak;\ncase \"AB\":\nconsole.log(\"Today's fortune might not be so good...\");\nbreak;\ndefault:\nconsole.log(\"Let's find out your blood type!\");\nbreak;\n}\n\n\n\n\n\n\n.............................................................................................................................................",
+          "answer_status": "explicit_answer_marker"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "lesson": "الدرس الثالث",
+      "type": "section",
+      "intro": "",
+      "questions": [
+        {
+          "number": 1,
+          "label": "السؤال الاول",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم باستخدام switch.\nلنُكمل البرنامج ليعرض \"حظك اليوم جيد\" إذا كانت فصيلة الدم A.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة A له.\n\nلنكتب البرنامج كما يلي:\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\n}",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاة السطر الثاني فارغ\n\n\nlet bloodType = \"A\";\n\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 2,
+          "label": "السؤال الثاني",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم باستخدام switch.\nلنُكمل البرنامج ليعرض \"حظك اليوم رائع!\" إذا كانت فصيلة الدم B.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة B له.\n\nلنكتب نفس الكود في السطرين 7 و9:\ncase \"B\":\nconsole.log(\"Today's fortune is excellent!\");\nbreak;",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاة السطر الثاني فارغ\n\nlet bloodType = \"B\";\n\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\ncase \"B\":\nconsole.log(\"Today's fortune is excellent!\");\nbreak;\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 3,
+          "label": "السؤال الثالث",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم باستخدام switch.\nلنُكمل البرنامج ليعرض نتائج مختلفة لفصائل الدم O وAB.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة AB له.\n\nلننشئ البرنامج كما يلي:\n① من السطر 10، إذا كانت فصيلة الدم O، فاعرض \"يبدو أن حظك اليوم جيد!\".\n② من السطر 13، إذا كانت فصيلة الدم AB، فاعرض \"قد لا يكون حظك اليوم جيدًا…\".",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاة السطر الثاني فارغ\n\nlet bloodType = \"AB\";\n\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\ncase \"B\":\nconsole.log(\"Today's fortune is excellent!\");\nbreak;\ncase \"O\":\nconsole.log(\"Today's fortune looks good!\");\nbreak;\ncase \"AB\":\nconsole.log(\"Today's fortune might not be so good...\");\nbreak;\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 4,
+          "label": "السؤال الرابع",
+          "question": "سننشئ برنامجًا للتنبؤ بالحظ حسب فصيلة الدم باستخدام switch.\nلنُكمل البرنامج ليعرض \"دعنا نعرف فصيلة دمك!\" عندما لا تتطابق أي من الشروط.\nفصيلة الدم محددة بالمتغير bloodType، وتم تعيين القيمة \"Unknown\" له.\n\nلننشئ البرنامج من السطر 16 كما يلي:\n① إذا لم تتطابق أي من الشروط، فاعرض \"دعنا نعرف فصيلة دمك!\" في وحدة التحكم.",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاة السطر الثاني فارغ\n\nlet bloodType = \"Unknown\";\n\nswitch (bloodType) {\ncase \"A\":\nconsole.log(\"Today's fortune is decent\");\nbreak;\ncase \"B\":\nconsole.log(\"Today's fortune is excellent!\");\nbreak;\ncase \"O\":\nconsole.log(\"Today's fortune looks good!\");\nbreak;\ncase \"AB\":\nconsole.log(\"Today's fortune might not be so good...\");\nbreak;\ndefault:\nconsole.log(\"Let's find out your blood type!\");\nbreak;\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 5,
+          "label": "السؤال الخامس",
+          "question": "سننشئ برنامجًا باستخدام switch يعرض الجدول اليومي حسب اليوم.\nاليوم محدد بالمتغير day، وتم تعيين القيمة \"Sunday\" له.\n\nاكمل البرنامج كما يلي:\n① إذا كان اليوم \"Saturday\"، اعرض \"اذهب إلى الدروس\".\n② إذا كان اليوم \"Sunday\"، اعرض \"اذهب للتسوق\".\n③ إذا لم يتطابق أي شيء، اعرض \"اذهب إلى المدرسة\".",
+          "answer": "نكتب في الاماكن المخصصة لكتابة الكود\n\n\nswitch\n\nday\n\ncase\n\nbreak\n\ncase\n\nbreak\n\ndefault\n\nbreak\n\n\nشكل الكود بالكامل\n\nlet day = \"Sunday\";\n\nswitch (day) {\ncase \"Saturday\":\nconsole.log(\"Go to lessons\");\nbreak;\ncase \"Sunday\":\nconsole.log(\"Go shopping\");\nbreak;\ndefault:\nconsole.log(\"Go to school\");\nbreak;\n}\n\n\n\n\n\n\n\n\n..................................................................................................................................................\n\n\nمراجعة المستوي 37\nحل مراجعة المستوي 37",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 6,
+          "label": "السؤال الاول",
+          "question": "هذا برنامج يُخرج الكلمة \"Red\" إذا كانت السلسلة النصية المُسندة إلى المتغير color هي \"red\".\n\nيرجى إضافة البرنامج التالي ابتداءً من السطر الخامس:\n① إذا كان المتغير color يساوي \"blue\"، أخرج \"Blue\" في وحدة التحكم (console)\n② إذا كان المتغير color يساوي \"green\"، أخرج \"Green\" في وحدة التحكم (console)\nومع ذلك، يُرجى كتابة البرنامج باستخدام else if.",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاه السطر الثاني فارغ\n\nlet color = \"green\";\n\nif (color == \"red\") {\nconsole.log(\"Red\");\n} else if (color == \"blue\") {\nconsole.log(\"Blue\");\n} else if (color == \"green\") {\nconsole.log(\"Green\");\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 7,
+          "label": "السؤال الثاني",
+          "question": "في أي الحالات يتم تنفيذ العملية المكتوبة في قسم default من عبارة switch؟ يُرجى اختيار الإجابة الصحيحة.",
+          "answer": "(cases)عندما لا تتطابق القيمة مع أيٍّ من الحالات",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 8,
+          "label": "السؤال الثالث",
+          "question": "البرنامج أدناه يُخرج الفترة الزمنية بناءً على الحقبة التاريخية المُدخلة في المتغير era.\nيُرجى اختيار النتيجة الصحيحة للإخراج.\n\n<البرنامج>\n\nlet era = \"Medieval\";\n\nswitch (era) {\ncase \"Modern\":\nconsole.log(\"1900~\");\nbreak;\ncase \"Industrial\":\nconsole.log(\"1760~1900\");\nbreak;\ncase \"Medieval\":\nconsole.log(\"500~1500\");\nbreak;\ncase \"Ancient\":\nconsole.log(\"3000 BC ~ 500 AD\");\nbreak;\n}",
+          "answer": "500~1500",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 9,
+          "label": "السؤال الرابع",
+          "question": "يرجى إنشاء برنامج باستخدام عبارة switch بحيث يتغير الإخراج بناءً على قيمة المتغير letter.\n\n① إذا كانت القيمة A، أخرج \"Well done!\" إلى وحدة التحكم\n② إذا كانت القيمة B، أخرج \"Keep up the good work\" إلى وحدة التحكم\n③ إذا كانت القيمة C، أخرج \"Let's try a little harder\" إلى وحدة التحكم",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاه السطر الثاني فارغ\n\nlet letter = \"B\";\n\nswitch (letter) {\ncase \"A\":\nconsole.log(\"Well done!\");\nbreak;\ncase \"B\":\nconsole.log(\"Keep up the good work\");\nbreak;\ncase \"C\":\nconsole.log(\"Let's try a little harder\");\nbreak;\n}",
+          "answer_status": "explicit_answer_marker"
+        },
+        {
+          "number": 10,
+          "label": "السؤال الخامس",
+          "question": "\"لقد أنشأنا برنامجًا باستخدام عبارة switch بحيث يتغير الإخراج بناءً على قيمة المتغير letter.\nيرجى إضافة البرنامج التالي:\n\n① إذا لم تتطابق أي من الحالات (cases) مع القيم، أخرج \"The notation is incorrect\" إلى وحدة التحكم",
+          "answer": "مسح ونسخ الكود او تعديل الكود ليكون هكذا مع مراعاه السطر الثاني فارغ\n\nlet letter = \"D\";\n\nswitch (letter) {\ncase \"A\":\nconsole.log(\"Well done!\");\nbreak;\ncase \"B\":\nconsole.log(\"Keep up the good work\");\nbreak;\ncase \"C\":\nconsole.log(\"Let's try a little harder\");\nbreak;\ndefault:\nconsole.log(\"The notation is incorrect\");\nbreak;\n}\n\n\n\n\n\n\n\n\n\n\n\n\nالف مبروك انتهائك من المستوي ال37 بايثون وحصولك علي الدرجة الكاملة\n\n\n\n\n\n\n\n\n\n لو محتاج مساعدة في حل مستويات المنصة ابعت وهنساعدك من خلال الفيس بوك بالضغط هنا وارسال رسالة \n\n\n\n\nاقرا ايضا :\n\nأخيرًا… حلول منصة كويرو (كوريو/كيرو/Quero) كاملة لجميع المستويات – الصف الثاني الثانوي | Python | الدرجة الكاملة ونسخ الإجابات اضغط هنا\n\n\n\n\nحل جميع مستويات منصة كوريو اليابانية 2026 للمرحلة الثانوية – 54 مستوى جافاسكريبت كامل وإجابات جاهزة للنسخ والدرجة الكاملة اضغط هنا\n\n\n\n الوسوم: الازهر والتعليم حل منصة كوريو للمرحلة الثانوية\n مشاركة\n           \nمقالات ذات صلة\nحل منصة كوريو للمرحلة الثانوية\nEfrah\n\nافرح وفرح اللي حواليك، افرح ربنا بيحب يشوفك فرحان .. يومكم مبسوط مدونه افرح نهتم بكل ما يهمك نهتم بكل ما هو جديد مدونة افرح مدونة معلوماتيه ترفيهية تعليمية بصيغة عصرية تهتم بكل جديد في حياتنا اليومية بالمعلومات العامة - وصفات صحية - معلومات دينية - ثقافية- صحية -رياضية لكى نرتقى بالمشاهد العربى ويكون ملم بجوانب الحياة من حولة.\n\nالتالي\nحل المستوى 38 الثامن والثلاثين كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nالسابق\nرسالة أقدم\nأكتب تعليق\nBLOGGER\nFACEBOOK\nهناك تعليق واحد:\nغير معرف\n10 أبريل 2026 في 11:38 ص\n\nاحسن م في العالم\n\n\nرد\n\nعداد مواقع التواصل الإجتماعي\n1k\nمتابع\n1k\nمتابع\n11k\nمشترك\n300k\nمعجب\nالتسميات\nاخبارنا\nاسلاميات\nالازهر والتعليم\nتجربة\nتقنية ومعلومات\nحل منصة الثقافة المالية للمرحلة الثانوية\nحل منصة كوريو للمرحلة الثانوية\nخدماتك\nالمشاركات الشائعة\nحل المستوى الثاني كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nحل المستوى الأول كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nحل المستوى الثالث كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nحل المستوى الرابع كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nحل المستوى الخامس كامل لمنصة كوريو اليابانية للصف الأول الثانوي – إجابات جاهزة للنسخ والدرجة الكاملة\nالتعليقات\n إتصل بنا\n\nافرح وفرح اللي حواليك افرح ربنا بيحب يشوفك فرحان .. يومكم مبسوط مدونه افرح نهتم بكل ما يهمك نهتم بكل ما هو جديد مدونة افرح مدونة معلوماتيه ترفيهية تعليمية بصيغة عصرية تهتم بكل جديد في حياتنا اليومية بالمعلومات العامة - وصفات صحية - معلومات دينية - ثقافية- صحية -رياضية لكى نرتقى بالمشاهد العربى ويكون ملم بجوانب الحياة من حولة.\n\nسياسة الاستخدام\nمن نحن\nسياسة الخصوصية\nاتصل بنا\nجميع الحقوق محفوظة© Efrah - افرح 2026",
+          "answer_status": "explicit_answer_marker"
+        }
+      ]
+    }
+  ],
+  "source_note": "تم الحفاظ على ترتيب المصدر. الإجابات المسترجعة وُسمت بمصدرها؛ الأسئلة التي لم يظهر لها جواب صريح بقيت null دون تخمين."
+}
