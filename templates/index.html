@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MKARY QUREO | مكاري</title>
+<style>
+:root{color-scheme:dark;--bg:#08111f;--panel:#111e31;--line:#263a55;--muted:#9eb0c8;--mint:#42e0b5;--blue:#5ca8ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#16304a 0,transparent 38%),var(--bg);color:#f4f7fb;font-family:Tahoma,Arial,sans-serif;min-height:100vh}
+header{padding:25px 18px;border-bottom:1px solid var(--line);background:#0b1728d9} .wrap{max-width:900px;margin:auto;padding:22px 16px}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#42e0b5,#3985ff);display:grid;place-items:center;color:#061322;font-weight:900;font-size:22px}
+h1{font-size:23px;margin:0 0 6px}header p{color:var(--muted);margin:0;line-height:1.7;font-size:13px}
+.card{background:linear-gradient(145deg,#132239,#0e192a);border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 12px 40px #0003}
+h2{font-size:18px;margin:0 0 16px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;color:#c8d5e5;font-size:13px;margin-bottom:7px}input,select{width:100%;padding:13px;border:1px solid #354b68;border-radius:11px;background:#091526;color:#fff;font-size:15px;outline:none}input:focus,select:focus{border-color:var(--mint)}
+button{font:inherit;border:0;border-radius:11px;padding:13px 18px;font-weight:700;cursor:pointer}
+.primary{background:linear-gradient(100deg,#42e0b5,#55a8ff);color:#071321}.secondary{background:#223650;color:#eaf3ff;border:1px solid #38516f}.danger{background:#492b38;color:#ffdce5}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.hint{font-size:12px;color:var(--muted);line-height:1.8}.status{padding:12px;border:1px solid var(--line);border-radius:12px;color:var(--muted);background:#0a1626;margin-top:12px;line-height:1.7}
+.log{max-height:290px;overflow:auto;display:flex;flex-direction:column;gap:8px}.entry{padding:9px 11px;background:#0a1728;border:1px solid #20344d;border-radius:9px;font-size:13px;line-height:1.6}.entry time{color:var(--mint);margin-left:8px;font-variant-numeric:tabular-nums}
+.check{display:flex;align-items:flex-start;gap:9px;margin-top:14px;color:#dce8f7;font-size:13px;line-height:1.7}.check input{width:auto;margin-top:4px;accent-color:var(--mint)}
+.hidden{display:none!important}.foot{text-align:center;color:#8093ad;font-size:12px;padding:16px}.tag{display:inline-block;border:1px solid #31516b;color:var(--mint);padding:4px 9px;border-radius:99px;font-size:11px;margin-top:12px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}h1{font-size:19px}.card{padding:16px}.wrap{padding:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap" style="padding-top:0;padding-bottom:0">
+<div class="brand"><div class="logo">M</div><div><h1>MKARY QUREO</h1><p>لوحة تشغيل ومتابعة حسابك على منصة QUREO</p></div></div>
+<div class="tag">تطوير مكاري</div>
+</div></header>
+<main class="wrap">
+<section class="card" id="loginCard">
+<h2>تسجيل الدخول إلى QUREO</h2>
+<div class="grid">
+<div><label for="student">كود الطالب</label><input id="student" autocomplete="username" placeholder="اكتب كود الطالب"></div>
+<div><label for="password">كلمة السر</label><input id="password" type="password" autocomplete="current-password" placeholder="اكتب كلمة السر"></div>
+</div>
+<div class="actions"><button class="primary" id="loginBtn">تسجيل الدخول</button></div>
+<p class="hint">بيانات الدخول تُرسل إلى خادم الموقع لتسجيل الدخول في QUREO. كلمة السر لا تُحفظ في قاعدة بيانات الموقع، وتُستخدم أثناء طلب تسجيل الدخول فقط. جلسة الاتصال تبقى في ذاكرة الخادم حتى تسجيل الخروج أو إعادة تشغيله.</p>
+<div class="status" id="loginStatus">غير مسجل الدخول.</div>
+</section>
+
+<section class="card hidden" id="workCard">
+<h2>تشغيل الأداة</h2>
+<div class="grid">
+<div><label for="from">من المستوى</label><select id="from"></select></div>
+<div><label for="to">إلى المستوى</label><select id="to"></select></div>
+</div>
+<label class="check"><input type="checkbox" id="preview" checked><span>وضع المعاينة أولًا (يفحص المطابقات دون إرسال إجابات أو تعديل التقدم).</span></label>
+<label class="check"><input type="checkbox" id="consent"><span>أفهم أن التشغيل الفعلي قد يرسل إجابات ويغيّر تقدمي على QUREO، وأوافق على بدء العملية.</span></label>
+<div class="actions">
+<button class="primary" id="startBtn">ابدأ التشغيل</button>
+<button class="secondary" id="refreshBtn">تحديث الحالة</button>
+<button class="danger" id="logoutBtn">تسجيل الخروج</button>
+</div>
+<div class="status" id="jobStatus">جاهز.</div>
+</section>
+
+<section class="card hidden" id="logsCard">
+<h2>سجل التشغيل</h2><div class="log" id="logs"><div class="hint">لا توجد عمليات حتى الآن.</div></div>
+<h2 style="margin-top:20px">النتائج</h2><pre id="results" class="status" style="white-space:pre-wrap;overflow-wrap:anywhere">لا توجد نتائج بعد.</pre>
+</section>
+<div class="foot">MKARY QUREO · مكاري — المطوّر</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+for(let i=1;i<=42;i++){for(const id of ['from','to']){let o=document.createElement('option');o.value=i;o.textContent='المستوى '+i;$(id).append(o)}}
+$('to').value='42';
+async function api(path,data){let r=await fetch(path,{method:data?'POST':'GET',headers:data?{'Content-Type':'application/json'}:{},body:data?JSON.stringify(data):undefined});let j=await r.json().catch(()=>({error:'استجابة غير مفهومة'}));if(!r.ok)throw Error(j.error||j.message||'حدث خطأ');return j}
+function msg(id,s){$(id).textContent=s}
+$('loginBtn').onclick=async()=>{let b=$('loginBtn');b.disabled=true;msg('loginStatus','جاري تسجيل الدخول والتحقق من الاتصال...');try{let r=await api('/api/login',{student_code:$('student').value,password:$('password').value});$('password').value='';$('student').value='';msg('loginStatus',r.message);$('workCard').classList.remove('hidden');$('logsCard').classList.remove('hidden');$('loginCard').classList.add('hidden');await refresh()}catch(e){msg('loginStatus',e.message)}finally{b.disabled=false}};
+$('startBtn').onclick=async()=>{if(!$('preview').checked&&!$('consent').checked){alert('أكد موافقتك على التشغيل الفعلي أولًا.');return}try{await api('/api/start',{from_level:+$('from').value,to_level:+$('to').value,preview:$('preview').checked});msg('jobStatus','بدأ التشغيل. تابع السجل بالأسفل.');$('consent').checked=false;await refresh()}catch(e){msg('jobStatus',e.message)}};
+async function refresh(){try{let s=await api('/api/status');if(s.authenticated){$('workCard').classList.remove('hidden');$('logsCard').classList.remove('hidden');$('loginCard').classList.add('hidden')}msg('jobStatus',(s.job.running?'قيد التشغيل — ':'آخر حالة — ')+s.job.stage);let logs=s.job.logs||[];$('logs').innerHTML='';if(!logs.length)$('logs').textContent='لا توجد عمليات حتى الآن.';for(let x of logs){let d=document.createElement('div');d.className='entry';let t=document.createElement('time');t.textContent=x.time;let span=document.createElement('span');span.textContent=x.message;d.append(t,span);$('logs').append(d)}$('results').textContent=JSON.stringify(s.job.results||[],null,2)}catch(e){msg('jobStatus',e.message)}}
+$('refreshBtn').onclick=refresh;
+$('logoutBtn').onclick=async()=>{try{await api('/api/logout',{});$('workCard').classList.add('hidden');$('logsCard').classList.add('hidden');$('loginCard').classList.remove('hidden');msg('loginStatus','تم تسجيل الخروج.')}catch(e){alert(e.message)}};
+refresh();setInterval(refresh,4000);
+</script>
+</body></html>
