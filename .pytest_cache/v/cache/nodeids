@@ -1,0 +1,20 @@
+[
+  "tests/test_assessment_runner.py::AssessmentTests::test_choice_mapping_preserves_operators",
+  "tests/test_assessment_runner.py::AssessmentTests::test_choice_mapping_uses_live_text_not_stored_id_or_position",
+  "tests/test_assessment_runner.py::AssessmentTests::test_choice_requires_exact_id_or_text",
+  "tests/test_assessment_runner.py::AssessmentTests::test_description_answer_uses_compact_extracted_code",
+  "tests/test_assessment_runner.py::AssessmentTests::test_extracts_else_if_insert_line_without_page_prose",
+  "tests/test_assessment_runner.py::AssessmentTests::test_extracts_level8_single_blank_wording",
+  "tests/test_assessment_runner.py::AssessmentTests::test_extracts_missing_expression_from_noisy_answer",
+  "tests/test_assessment_runner.py::AssessmentTests::test_extracts_ordered_level8_fill_blanks_without_page_text",
+  "tests/test_assessment_runner.py::AssessmentTests::test_live_description_templates_for_levels_1_to_7",
+  "tests/test_assessment_runner.py::AssessmentTests::test_parse_har_confirmed_question_shape",
+  "tests/test_assessment_runner.py::AssessmentTests::test_reads_server_correctness_and_completion",
+  "tests/test_assessment_runner.py::AssessmentTests::test_rejects_long_unstructured_description_answer",
+  "tests/test_assessment_runner.py::AssessmentTests::test_retake_does_not_skip_answers_from_previous_attempt",
+  "tests/test_assessment_runner.py::AssessmentTests::test_unknown_choice_is_not_guessed",
+  "tests/test_core.py::CoreTests::test_chapter_progress_is_not_assumed_completed",
+  "tests/test_core.py::CoreTests::test_completed_markers",
+  "tests/test_core.py::CoreTests::test_id_extraction",
+  "tests/test_core.py::CoreTests::test_list_extraction"
+]
