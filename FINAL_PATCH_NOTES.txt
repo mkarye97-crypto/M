@@ -1,0 +1,7 @@
+v5.3 FINAL BUILD PATCH
+- Integrated assessment_runner.py into main.py.
+- Added local exact question-id database (266 records).
+- Added review/test answer endpoint routing based on live chapter test_type.
+- Added explicit SUBMIT confirmation and --preview-only mode.
+- Added server result retrieval and per-chapter answer/result reports.
+- No first-choice or placeholder answer fallback.

@@ -1,0 +1,13 @@
+MOODY QUREO Requests — patch v5.1
+
+Fix:
+- After all lecture records in a chapter are verified completed, the client refreshes the chapter progression endpoint.
+- It will NOT start the next chapter unless QUREO itself marks the current chapter completed.
+- If lessons are complete but chapter-level progression is still pending, it stops safely and saves a minimal, non-sensitive state summary to data/chapter_<id>_gate_status.json.
+- No tests, reviews, answers, or assessment submissions are automated.
+
+Why this matters:
+QUREO may require a chapter-level assessment/review or another completion action beyond finishing the lectures. A 400 response with prev_chapter_not_completed confirms the server-side progression gate; the client cannot safely bypass it.
+
+Run:
+python main.py

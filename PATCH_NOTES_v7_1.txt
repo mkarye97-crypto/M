@@ -1,0 +1,16 @@
+MOODY QUREO v7.1 — RETAKE LEDGER SKIP FIX
+
+Fixed a missed call site in assessment_runner.py: the question loop now calls
+should_skip_prior_answer(..., retake=retake). Previously the helper existed and
+its unit test passed, but the live submission loop still checked answered_ids
+unconditionally. This caused ANSWER-SKIP during --retake and then QUREO rejected
+the next ordered question with prev_question_not_answered.
+
+During normal resume, accepted IDs are still skipped. During --retake, prior
+answered IDs remain in the ledger for audit but are not used to skip questions.
+This does not prove that QUREO created a fresh attempt; work_in_process=true
+remains insufficient to distinguish a new attempt from an old one. Stop if the
+server rejects the first question or does not expose a fresh ordered attempt.
+
+No credentials or cookies are included. Local unit tests only; no live account
+submissions were performed.

@@ -1,0 +1,12 @@
+MOODY QUREO v6.4
+
+Fixes based on the user's live Level 8 run:
+1) Extracts the compact answer for wording "الاجابه نكتب في المكان الفارغ" (e.g. score >= 60).
+2) Extracts explicitly ordered fill-in fragments from "نكتب النواقص في الاسطر هكذا بالترتيب" without copying final code or page promotional text.
+3) Stops the assessment immediately at the first unresolved question. Later questions are not sent out of order.
+4) Stops immediately after the first answer submission error, preventing cascaded prev_question_not_answered errors.
+5) Keeps existing attempt ledger behavior. Preserve the user's existing data/ directory when upgrading; do not delete it.
+
+Safety:
+- The local answer source remains third-party/unverified. The tool checks QUREO's response when available.
+- No new attempt is opened by packaging or local tests. Live behavior must be tested by the user.

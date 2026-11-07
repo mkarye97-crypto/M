@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتبة البرمجة</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #0b1220;
+    color: #fff;
+}
+
+header {
+    padding: 25px 18px;
+    background: #121d30;
+    border-bottom: 1px solid #26364e;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 25px;
+}
+
+header p {
+    color: #a8b6ca;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px;
+}
+
+.search {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #34445e;
+    background: #121d30;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.levels {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.level {
+    padding: 16px 8px;
+    border: 1px solid #34445e;
+    border-radius: 12px;
+    background: #17243a;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.level.active {
+    background: #176b59;
+    border-color: #4de0b5;
+}
+
+.panel {
+    margin-top: 20px;
+    padding: 18px;
+    background: #121d30;
+    border: 1px solid #293b55;
+    border-radius: 15px;
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+.lesson {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #34445e;
+    background: #192941;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lesson:hover {
+    border-color: #4de0b5;
+}
+
+.lesson p {
+    color: #a8b6ca;
+    font-size: 13px;
+}
+
+.note {
+    width: 100%;
+    min-height: 100px;
+    background: #0b1424;
+    border: 1px solid #34445e;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+button {
+    font-family: inherit;
+}
+
+.empty {
+    color: #9aabc4;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:600px) {
+    .levels {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>مكتبة تعلم البرمجة</h1>
+    <p>
+        استكشف المستويات والدروس، وسجل ملاحظاتك وتقدمك في التعلم.
+    </p>
+</header>
+
+<div class="container">
+
+    <input
+        id="search"
+        class="search"
+        placeholder="ابحث عن مستوى أو درس..."
+    >
+
+    <h2>المستويات</h2>
+
+    <div id="levels" class="levels">
+        <div class="empty">جاري تحميل المستويات...</div>
+    </div>
+
+    <div class="panel" id="content">
+        <div class="empty">
+            اختر مستوى لعرض الدروس.
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+let allLevels = [];
+let selectedLevel = null;
+
+const levelsBox = document.getElementById("levels");
+const contentBox = document.getElementById("content");
+const searchBox = document.getElementById("search");
+
+async function loadLevels() {
+
+    levelsBox.innerHTML = "";
+
+    for (let i = 1; i <= 42; i++) {
+
+        let number = String(i).padStart(2, "0");
+
+        try {
+
+            let response = await fetch(
+                `levels/Level_${number}.json`
+            );
+
+            if (!response.ok) continue;
+
+            let data = await response.json();
+
+            allLevels.push(data);
+
+        } catch (error) {
+
+            console.log("تعذر تحميل المستوى:", i);
+
+        }
+
+    }
+
+    renderLevels();
+
+}
+
+function renderLevels() {
+
+    let search = searchBox.value.trim().toLowerCase();
+
+    levelsBox.innerHTML = "";
+
+    allLevels.forEach((level, index) => {
+
+        let title = level.title || `المستوى ${level.level}`;
+
+        let matches =
+            title.toLowerCase().includes(search) ||
+            String(level.level).includes(search);
+
+        if (!matches) return;
+
+        let button = document.createElement("button");
+
+        button.className = "level";
+
+        if (selectedLevel === index) {
+            button.classList.add("active");
+        }
+
+        button.textContent = `المستوى ${level.level}`;
+
+        button.onclick = () => {
+
+            selectedLevel = index;
+
+            renderLevels();
+            showLessons(level);
+
+        };
+
+        levelsBox.appendChild(button);
+
+    });
+
+}
+
+function showLessons(level) {
+
+    contentBox.innerHTML = "";
+
+    let heading = document.createElement("h2");
+
+    heading.textContent = `المستوى ${level.level}`;
+
+    contentBox.appendChild(heading);
+
+    let description = document.createElement("p");
+
+    description.style.color = "#a8b6ca";
+
+    description.textContent =
+        `عدد الدروس: ${level.lessons.length}`;
+
+    contentBox.appendChild(description);
+
+    level.lessons.forEach((lesson, index) => {
+
+        if (lesson.type === "intro") return;
+
+        let card = document.createElement("div");
+
+        card.className = "lesson";
+
+        let title = document.createElement("strong");
+
+        title.textContent =
+            lesson.lesson || `الدرس ${index + 1}`;
+
+        let info = document.createElement("p");
+
+        info.textContent =
+            `${(lesson.questions || []).length} عناصر تدريب مسجلة`;
+
+        card.appendChild(title);
+        card.appendChild(info);
+
+        card.onclick = () => showLessonDetails(level, lesson);
+
+        contentBox.appendChild(card);
+
+    });
+
+}
+
+function showLessonDetails(level, lesson) {
+
+    contentBox.innerHTML = "";
+
+    let title = document.createElement("h2");
+
+    title.textContent = lesson.lesson || "تفاصيل الدرس";
+
+    contentBox.appendChild(title);
+
+    let noteTitle = document.createElement("p");
+
+    noteTitle.textContent = "ملاحظاتي على الدرس:";
+
+    contentBox.appendChild(noteTitle);
+
+    let note = document.createElement("textarea");
+
+    note.className = "note";
+
+    let key = `note_${level.level}_${lesson.order}`;
+
+    note.value = localStorage.getItem(key) || "";
+
+    note.placeholder = "اكتب ملاحظاتك هنا...";
+
+    note.addEventListener("input", () => {
+
+        localStorage.setItem(key, note.value);
+
+    });
+
+    contentBox.appendChild(note);
+
+    let back = document.createElement("button");
+
+    back.className = "level";
+
+    back.style.marginTop = "15px";
+
+    back.textContent = "رجوع للدروس";
+
+    back.onclick = () => showLessons(level);
+
+    contentBox.appendChild(back);
+
+}
+
+searchBox.addEventListener("input", renderLevels);
+
+loadLevels();
+
+</script>
+
+</body>
+</html>

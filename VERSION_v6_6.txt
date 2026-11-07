@@ -1,0 +1,4 @@
+MOODY QUREO v6.6
+Retake request now follows the observed browser sequence and verifies post-start student state.
+Retake applies to all selected chapters, not only chapters locally marked completed.
+No claim that 204 alone guarantees a fresh attempt.

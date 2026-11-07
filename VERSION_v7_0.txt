@@ -1,0 +1,5 @@
+MOODY QUREO v7.0 — RETAKE ORDER FIX
+- Retake no longer skips question IDs from the previous local ledger.
+- Previous answered IDs remain archived for audit; ordinary resume still skips them.
+- Added exact live prompt/starter template for Q90005040 using the supplied question and hints.
+- No live QUREO submissions were performed during local tests.

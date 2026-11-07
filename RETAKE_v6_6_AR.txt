@@ -1,0 +1,24 @@
+MOODY QUREO v6.6 — RETAKE / START FROM BEGINNING
+
+التغيير مبني على تسلسل المتصفح الذي أرسله المستخدم للفصل 90007:
+1) PUT /api/study/students/chapters/{chapter_id}/test
+2) GET /api/study/students/chapters/{chapter_id}/test
+والاستجابة المرصودة لحالة الطالب كانت:
+{"visible_result": false, "work_in_process": true}
+
+ما يفعله وضع --retake الآن:
+- يطلب تنفيذ نفس PUT الذي أرسله زر «ابدأ من البداية» مرة واحدة لكل فصل محدد.
+- يعيد قراءة حالة الطالب مباشرة بعد الطلب.
+- لا يرسل الإجابات إذا فشل التحقق من وجود work_in_process=true.
+- لا يخلط سجل الإجابات المحلي القديم بالجولة الجديدة؛ يحتفظ بتاريخ الجولة السابقة في retake_history.
+- يطبق وضع retake على كل فصل داخل النطاق، وليس فقط الفصول التي صنفها endpoint كـ completed.
+
+حد تقني مهم:
+استجابة 204 ثم {visible_result:false, work_in_process:true} تثبت وجود تقييم قيد العمل، لكنها لا تميز بمفردها بين محاولة جديدة ومحاولة قديمة مستأنفة. لذلك الأداة لا تدّعي ضمان تصفير المحاولة. يجب التحقق من أن أول سؤال أصبح متاحًا، ومراجعة النتيجة الجديدة بعد الإكمال. إذا أعاد الخادم already_answered أو prev_question_not_answered فستتوقف الأداة عند أول خطأ.
+
+التشغيل:
+python main.py --from-level 7 --to-level 7 --retake
+ثم اكتب RETAKE عند التأكيد.
+احتفظ بمجلد data ولا تمسح assessment_ledger.json.
+
+الاختبارات المحلية: 14 اختبارًا ناجحًا. لم يتم اختبار الاتصال الحي بحساب المستخدم.

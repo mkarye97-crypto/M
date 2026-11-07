@@ -1,0 +1,8 @@
+MOODY QUREO v6.3
+- Removed the second PUT /api/study/students/chapters/{id}/test after answers.
+- Captures server correct/model_answer/complete.chapter.completed_at per answer.
+- Marks completion from server's answer response.
+- Extracts compact else-if line from noisy scraped answer text.
+- Does not automatically retry rejected answers.
+- 12 local unit tests pass; no live account test was performed.
+Keep your existing data/ directory and assessment_ledger.json when updating.

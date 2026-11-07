@@ -1,0 +1,22 @@
+MOODY QUREO v6.9 — DESCRIPTION FIX (LEVELS 1–7)
+
+- Added guarded answer construction for description questions 90001020,
+  90002030, 90003030, 90004020, 90005010, 90006020 and 90007020.
+- Uses the live question text and QUREO-provided descriptions[].code starter
+  buffer. If the question text or starter code differs, it refuses the template.
+- Sends the complete editor buffer. For 90007020, preserves the live starter
+  code and appends the required else-if line.
+- Existing sequence-stop behavior remains: the runner stops at the first
+  unresolved question or submission error.
+- Choice answers continue to be matched against current live option text.
+- No cookies, login IDs, passwords, or session tokens are included.
+
+Validation performed locally:
+- 7/7 known description question fixtures produced a candidate answer.
+- 17 unit tests passed.
+
+Important:
+- Candidate answers are derived from the supplied question prompts, hints,
+  starter code and local reference bank. Only QUREO's result endpoint can
+  confirm correctness.
+- work_in_process=true does not independently prove that a retake reset.
